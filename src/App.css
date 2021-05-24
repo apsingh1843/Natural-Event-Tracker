@@ -7,9 +7,8 @@ body{
 }
 .map{
   width: 100vw;
-  height: 100vh;
+  height: 700px;
   position: relative;
-
 }
 header{
   position: fixed;
@@ -17,11 +16,23 @@ header{
   left: 0;
   right: 0;
   z-index: 100;
+  background-color: #fff;
+  text-align: center;
+
+}
+.heading{
+  display: block;
   background-color: #024857;
   color: white;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  z-index: 100;
+  padding: 10px;
+  margin-bottom: 0px;
+
+}
+.navbarbg{
+  background-color: #024857;
+  opacity: 0.8;
 }
 
 .location-icon{
@@ -57,21 +68,26 @@ header{
 }
 .bouncer div:nth-child(2){
   animation-delay: 0.2s;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .bouncer div:nth-child(3){
   animation-delay: 0.3s;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .bouncer div:nth-child(4){
   animation-delay: 0.4s;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .bouncer div:nth-child(5){
   animation-delay: 0.5s;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 @keyframes bouncer {
   from { transform: translateY(0)}
   to { transform: translateY(-150px)}
+}
+
+.location-info{
+  z-index: 100;
+  background-color: black;
 }
