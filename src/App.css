@@ -11,3 +11,67 @@ body{
   position: relative;
 
 }
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #024857;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.location-icon{
+  font-size: 2rem;
+  color: red;
+}
+
+.bouncer-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.bouncer-body h3{
+  color: #024857;
+  margin-top: 30px;
+}
+
+.bouncer{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 160px;
+  height: 150px;
+}
+.bouncer div{
+  width: 20px;
+  height: 20px;
+  background: #024857;
+  border-radius: 50%;
+  animation: bouncer 0.6s cubic-bezier(.19,.57,.3,.98)  infinite alternate;
+}
+.bouncer div:nth-child(2){
+  animation-delay: 0.2s;
+  opacity: 0.8;
+}
+.bouncer div:nth-child(3){
+  animation-delay: 0.3s;
+  opacity: 0.6;
+}
+.bouncer div:nth-child(4){
+  animation-delay: 0.4s;
+  opacity: 0.4;
+}
+.bouncer div:nth-child(5){
+  animation-delay: 0.5s;
+  opacity: 0.2;
+}
+@keyframes bouncer {
+  from { transform: translateY(0)}
+  to { transform: translateY(-150px)}
+}

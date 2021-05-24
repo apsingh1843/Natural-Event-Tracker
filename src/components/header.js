@@ -2,7 +2,9 @@ import React from 'react';
 
 const Header = () => {
   return (
+    <header>
       <h1>Natural Event Tracker (Using NASA Open APIs)</h1>
+    </header>
   );
 }
 
