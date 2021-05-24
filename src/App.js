@@ -21,7 +21,6 @@ function App() {
       setIsLoading(false)
     }
     fetchEvents()
-    console.log(eventData)
   },[])
 
   return (

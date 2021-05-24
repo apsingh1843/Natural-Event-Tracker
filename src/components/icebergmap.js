@@ -14,13 +14,13 @@ class IcebergMap extends Component {
 
   render() {
     const icebergmarkers = this.props.eventData.map(ev => {
-      if (ev.categories[0].id === 15) {
+      /*if (ev.categories[0].id === 15) {
         return(
             <IcebergTracker key={ev.id} lat={ev.geometries.pop().coordinates[1]}
               lng={ev.geometries.pop().coordinates[0]}
             />
         );
-      }
+      }*/
       return null;
     })
 

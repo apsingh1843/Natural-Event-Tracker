@@ -56,12 +56,12 @@ header{
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  width: 160px;
+  width: 100px;
   height: 150px;
 }
 .bouncer div{
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: #024857;
   border-radius: 50%;
   animation: bouncer 0.6s cubic-bezier(.19,.57,.3,.98)  infinite alternate;

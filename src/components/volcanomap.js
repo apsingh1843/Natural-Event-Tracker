@@ -14,12 +14,12 @@ class VolcanoMap extends Component {
 
   render() {
     const volcanomarkers = this.props.eventData.map(ev => {
-      if (ev.categories[0].id === 12) {
-        return(
-            <VolcanoTracker key={ev.id} lat={ev.geometries[0].coordinates[1]}
-              lng={ev.geometries[0].coordinates[0]}
-            />
-        );
+      if (ev.categories[0].id === 12 && ev.geometries[0].type === 'Point') {
+          return(
+              <VolcanoTracker key={ev.id} lat={ev.geometries[0].coordinates[1]}
+                lng={ev.geometries[0].coordinates[0]}
+              />
+          );
       }
       return null;
     })
