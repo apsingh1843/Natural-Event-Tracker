@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import { GOOGLE_MAP_API_KEY } from '../keys';
-import IcebergTracker from './icebergTracker';
+//import IcebergTracker from './icebergTracker';
 //import LocationInfoBox from './locationInfoBox';
 
 class IcebergMap extends Component {
