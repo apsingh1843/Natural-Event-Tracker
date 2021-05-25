@@ -13,7 +13,7 @@ class FireMap extends Component {
   }
 
   render() {
-    console.log(this.props.eventData);
+    //console.log(this.props.eventData);
 
     const firemarkers = this.props.eventData.map(ev => {
       if (ev.categories[0].id === 8) {

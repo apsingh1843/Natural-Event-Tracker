@@ -43,7 +43,7 @@ VolcanoMap.defaultProps = {
     lat: 22.56263,
     lng: 88.36304
   },
-  zoom: 6
+  zoom: 3
 }
 
 export default VolcanoMap;

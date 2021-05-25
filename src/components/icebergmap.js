@@ -15,6 +15,7 @@ class IcebergMap extends Component {
   render() {
     const icebergmarkers = this.props.eventData.map(ev => {
       /*if (ev.categories[0].id === 15) {
+        console.log(ev);
         return(
             <IcebergTracker key={ev.id} lat={ev.geometries.pop().coordinates[1]}
               lng={ev.geometries.pop().coordinates[0]}
